@@ -92,6 +92,7 @@ int main (void)
       param_nos = READ_PARAM_NOS;
       while(param_nos--)
       {
+         idata =0xABCD;
          if (wiringPiSPIDataRW (SPI_CHAN, (unsigned char*)&idata, 2) == -1)
          {
             printf ("SPI failure: %s\n", strerror (errno)) ;
