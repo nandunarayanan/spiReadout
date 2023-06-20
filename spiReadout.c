@@ -62,7 +62,7 @@ void spiSetup (int speed)
 int main (void)
 {
    int speed, times, size ;
-   unsigned int idata =0x0000;
+   unsigned int idata =0xABCD;
    int spiFail ;
    unsigned char *myData ;
    double timePerTransaction, perfectTimePerTransaction, dataSpeed ;
